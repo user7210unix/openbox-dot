@@ -1,0 +1,12 @@
+#!/bin/sh
+~/.fehbg &
+
+picom &
+
+.config/polybar/launch_polybar.sh &
+
+obmenu-generator -p &
+
+xrdb ~/.Xresources &
+
+exec openbox
